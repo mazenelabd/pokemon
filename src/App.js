@@ -33,7 +33,6 @@ const App = () => {
           setLoaded(true);
           setError(false);
           console.log(res);
-          console.log(collected);
         });
       })
       .catch((err) => {
@@ -44,6 +43,7 @@ const App = () => {
   };
   useEffect(() => {
     generateNewPokemon();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <>
